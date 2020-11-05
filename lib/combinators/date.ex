@@ -13,7 +13,22 @@ defmodule DateTimeParser.Combinators.Date do
     "thur" => "Thursday",
     "thu" => "Thursday",
     "fri" => "Friday",
-    "sat" => "Saturday"
+    "sat" => "Saturday",
+    # DE
+    "mo" => "Monday",
+    "di" => "Tuesday",
+    "mi" => "Wednesday",
+    "do" => "Thursday",
+    "fr" => "Friday",
+    "sa" => "Saturday",
+    "so" => "Sunday",
+    "montag" => "Monday",
+    "dienstag" => "Tuesday",
+    "mittwoch" => "Wednesday",
+    "donnerstag" => "Thursday",
+    "freitag" => "Friday",
+    "samstag" => "Saturday",
+    "sonntag" => "Sunday",
   }
   @months_map %{
     "january" => 1,
@@ -39,7 +54,19 @@ defmodule DateTimeParser.Combinators.Date do
     "sep" => 9,
     "oct" => 10,
     "nov" => 11,
-    "dec" => 12
+    "dec" => 12,
+    # DE
+    "januar" => 1,
+    "februar" => 2,
+    "mär" => 3,
+    "märz" => 3,
+    "mai" => 5,
+    "juni" => 6,
+    "juli" => 7,
+    "okt" => 10,
+    "oktober" => 10,
+    "dez" => 12,
+    "dezember" => 12,
   }
   @date_separator [",", ".", "/", "-", " "]
 
